@@ -4,30 +4,15 @@ exports.Comida = void 0;
 class Comida {
     nome;
     categoria;
-    qtdDisponivel;
-    prodResponsavel;
-    constructor(n, c, q, p) {
+    constructor(n, c) {
         this.nome = n;
         this.categoria = c;
-        this.qtdDisponivel = q;
-        this.prodResponsavel = p;
     }
     getNome() {
         return this.nome;
     }
-    getcCategoria() {
+    getCategoria() {
         return this.categoria;
-    }
-    getQtdDisponivel() {
-        return this.qtdDisponivel;
-    }
-    getProdResponsavel() {
-        return this.prodResponsavel;
-    }
-    // Método serve para colocar qtd ou tirar qtd 
-    // Se ao receber um num negativo, - + da -
-    setQtd(val) {
-        this.qtdDisponivel += val;
     }
 }
 exports.Comida = Comida;
