@@ -1,4 +1,4 @@
-import { Nomeada } from "./Interfaces/Nomeada";
+import { Nomeada } from "../Interfaces/Nomeada";
 
 export class Instituicao implements Nomeada {
     

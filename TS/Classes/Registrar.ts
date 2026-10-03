@@ -1,19 +1,24 @@
 
-import { green, purple, red } from "./Auxiliares/cores";
-import { Nomeada } from "./Interfaces/Nomeada";
+import { green, purple, red } from "../Auxiliares/cores";
+import { Nomeada } from "../Interfaces/Nomeada";
 
-// Classe para controlar as listas de instituições, 
+// Classe para controlar as listas de instituições
 export class Registrar<T extends Nomeada> {
 
     private lista: T[] = [];
 
     public add(item: T): void {
         this.lista.push(item);
+        green(`${item.getNome()} registrado com sucesso!`);
+    }
+
+    public getLista(): T[] {
+        return this.lista;
     }
 
     public listar(): void {
 
-        if (this.lista.length = 0) {
+        if (this.lista.length !== 0) {
 
             for (let i = 0; i < this.lista.length; i++) {
                 green(`- ${this.lista[i].getNome()}`);

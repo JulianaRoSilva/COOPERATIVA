@@ -1,6 +1,7 @@
+import { Nomeada } from "../Interfaces/Nomeada";
 import { Comida } from "./Comida";
 import { Instituicao } from "./Instituicao";
-import { Nomeada } from "./Interfaces/Nomeada";
+
 
 export abstract class Produtor implements Nomeada {
 

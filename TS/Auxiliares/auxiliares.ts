@@ -2,7 +2,7 @@
 
 export const ask = require('readline-sync')
 
-import { Instituicao } from "../Instituicao";
+import { Instituicao } from "../Classes/Instituicao";
 import { Produtor } from "../Produtor";
 import { purple } from "./cores";
 

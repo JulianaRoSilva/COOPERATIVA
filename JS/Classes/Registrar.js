@@ -1,15 +1,19 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Registrar = void 0;
-const cores_1 = require("./Auxiliares/cores");
-// Classe para controlar as listas de instituições, 
+const cores_1 = require("../Auxiliares/cores");
+// Classe para controlar as listas de instituições
 class Registrar {
     lista = [];
     add(item) {
         this.lista.push(item);
+        (0, cores_1.green)(`${item.getNome()} registrado com sucesso!`);
+    }
+    getLista() {
+        return this.lista;
     }
     listar() {
-        if (this.lista.length = 0) {
+        if (this.lista.length !== 0) {
             for (let i = 0; i < this.lista.length; i++) {
                 (0, cores_1.green)(`- ${this.lista[i].getNome()}`);
             }

@@ -1,5 +1,5 @@
 
-import { Nomeada } from "./Interfaces/Nomeada";
+import { Nomeada } from "../Interfaces/Nomeada";
 
 export class Comida implements Nomeada {
 
